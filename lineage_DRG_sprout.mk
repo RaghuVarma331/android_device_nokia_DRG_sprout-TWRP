@@ -16,9 +16,6 @@
 
 ALLOW_MISSING_DEPENDENCIES=true
 
-# Get the prebuilt list of APNs
-$(call inherit-product, vendor/omni/config/gsm.mk)
-
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
@@ -26,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # A/B updater
 AB_OTA_UPDATER := true
@@ -71,7 +68,7 @@ TARGET_RECOVERY_WIPE := \
 
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := omni_DRG_sprout
+PRODUCT_NAME := lineage_DRG_sprout
 PRODUCT_DEVICE := DRG_sprout
 PRODUCT_BRAND := Nokia
 PRODUCT_MODEL := Nokia 6.1 Plus
