@@ -1,0 +1,8 @@
+[
+  {
+    "remote":"github",
+    "repository": "RaghuVarma331/external_magisk-prebuilt",
+    "target_path": "external/magisk-prebuilt",
+    "revision":"master"
+  }
+]
