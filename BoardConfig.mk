@@ -82,8 +82,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # A/B device flags
 TARGET_NO_KERNEL := false
-#TARGET_NO_RECOVERY := true
-#BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 AB_OTA_UPDATER := true
 
@@ -117,11 +115,6 @@ TW_USE_TOOLBOX := true
 
 # Asian region languages
 TW_EXTRA_LANGUAGES := true
-# TW_DEFAULT_LANGUAGE := zh_CN
-
-# Debug flags
-#TWRP_INCLUDE_LOGCAT := true
-#TARGET_USES_LOGD := true
 
 # Workaround for error copying vendor files to recovery ramdisk
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -130,10 +123,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Extras
 BOARD_SUPPRESS_SECURE_ERASE := true
 TW_USE_LEDS_HAPTICS := true
-USE_RECOVERY_INSTALLER := true
-RECOVERY_INSTALLER_PATH := device/nokia/DRG_sprout/installer
-TW_EXCLUDE_TWRPAPP := true
 TW_INCLUDE_REPACKTOOLS := true
-TW_HAS_EDL_MODE := true
 TW_Y_OFFSET := 89
 TW_H_OFFSET := -89
